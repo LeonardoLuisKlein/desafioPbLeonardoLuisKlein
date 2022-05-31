@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    color: #222222;
+    background: #E5E5E5;
+}
+
+body section{
+    width: 620px;
+    height: 763px;
+    left: 192px;
+    top: 293px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin-top: 60px;
+}
+
+header{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.main{
+    margin: 10px auto;
+  
+}
+
+.title-intern{
+    align-self: center;
+    justify-content: center;
+}
