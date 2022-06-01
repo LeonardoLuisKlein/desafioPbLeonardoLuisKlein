@@ -7,6 +7,8 @@ body{
     background: #E5E5E5;
 }
 
+
+
 body section{
     width: 620px;
     height: 763px;
@@ -14,7 +16,6 @@ body section{
     top: 293px;
     background: #FFFFFF;
     border-radius: 20px;
-    margin-top: 60px;
 }
 
 header{
@@ -176,14 +177,16 @@ form{
     margin-left: 20px;
 }
 
-.form-accept-register{
+.form-check-button{
     display: flex;
-    align-content: flex-end;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+    margin-top: 85px;
 }
 
+
 .form-input-inbutbutton{
-    display: flex;
     box-sizing: border-box;
     width: 20px;
     height: 20px;
@@ -193,8 +196,6 @@ form{
     flex: none;
     order: 0;
     flex-grow: 0;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
 }
 
 .form-input-checklabel{
@@ -222,4 +223,22 @@ form{
     border-radius: 10px;
     color: white;
     border:none;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .img-intern, .title-intern, .form-title, .form-title-phone,  .form-title-birthday, .form-input-name, .form-email, .form-input-email, .form-phone, .form-input-phone, .form-password, .form-input-password, .form-birthday, .form-input-birthday, .form-check-button, .form-input-inputbutton, .form-input-checklabel, .form-input-button {
+        width: auto;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .form-title-phone, .form-phone, .form-input-phone {
+        margin-left: 0px;
+    }
+    
+    .form-title-birthday, .form-birthday, .form-input-birthday{
+        margin-left: 0px; 
+    }
 }
