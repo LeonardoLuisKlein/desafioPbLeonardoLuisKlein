@@ -23,14 +23,203 @@ header{
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    margin-top: 10px;
 }
 
 .main{
-    margin: 10px auto;
+    margin-left: 20px;
   
+}
+
+.img-intern{
+    width: 213px;
+    height: 124px;
+    left: 389px;
+    top: 321px;
+    margin-top: 20px;
 }
 
 .title-intern{
     align-self: center;
     justify-content: center;
+    font-size: 2.25em;
+}
+
+form{
+    display: flex;
+    margin-left: 46px;
+    margin-right: 59px;
+    flex-wrap: wrap;
+}
+
+.form-title{
+    height: 16px;
+    left: 0px;
+    right: 0px;
+    top: -20px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    color: #767676;
+    margin-left: 0px;
+}
+
+.form-title-phone{
+    height: 16px;
+    left: 0px;
+    right: 0px;
+    top: -20px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    color: #767676;
+    margin-left: 23px;
+}
+
+.form-title-birthday{
+    height: 16px;
+    left: 0px;
+    right: 0px;
+    top: -20px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    color: #767676;
+    margin-left: 20px;
+}
+
+.form-input-name{
+    box-sizing: border-box;
+    width: 515px;
+    height: 40px;
+    left: 238px;
+    top: 533px;
+    background: #FFFFFF;
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+
+}
+
+.form-email{
+    margin-top: 50px;
+}
+
+.form-input-email{
+    box-sizing: border-box;
+    width: 330px;
+    height: 40px;
+    left: 237px;
+    top: 645px;
+    background: #FFFFFF;
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+}
+
+.form-phone{
+    margin-top:50px;
+}
+
+.form-input-phone{
+    box-sizing: border-box;
+    width: 162px;
+    height: 40px;
+    left: 591px;
+    top: 645px;
+    background: #FFFFFF;
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+    margin-left: 23px;
+}
+
+.form-password{
+    margin-top:50px;
+}
+
+.form-input-password{
+    box-sizing: border-box;
+    width: 330px;
+    height: 40px;
+    left: 237px;
+    top: 745px;
+    background: #FFFFFF;
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+}
+
+.form-birthday{
+    margin-top:50px;
+}
+
+.form-input-birthday{
+    box-sizing: border-box;
+    width: 164px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-left: 20px;
+}
+
+.form-accept-register{
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.form-input-inbutbutton{
+    display: flex;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    background: #0DBDBD;
+    border: 2px solid #0DBDBD;
+    border-radius: 2px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+.form-input-checklabel{
+    width: 214px;
+    height: 18px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #111111;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.form-input-button{
+    padding: 0px 12px;
+    gap: 6px;
+    width: 81px;
+    height: 40px;
+    left: 670px;
+    top: 941px;
+    background: #0DBDBD;
+    border-radius: 10px;
+    color: white;
+    border:none;
 }
