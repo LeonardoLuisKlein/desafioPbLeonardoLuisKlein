@@ -9,13 +9,15 @@ body{
 
 
 
-body section{
-    width: 620px;
+section{
+    display: flex;
+    width: 650px;
     height: 763px;
     left: 192px;
     top: 293px;
     background: #FFFFFF;
     border-radius: 20px;
+    flex-direction: column;
 }
 
 header{
@@ -24,12 +26,10 @@ header{
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin-top: 10px;
 }
 
 .main{
     margin-left: 20px;
-  
 }
 
 .img-intern{
@@ -44,6 +44,7 @@ header{
     align-self: center;
     justify-content: center;
     font-size: 2.25em;
+    font-weight: bold;
 }
 
 form{
@@ -51,6 +52,7 @@ form{
     margin-left: 46px;
     margin-right: 59px;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .form-title{
@@ -113,9 +115,7 @@ form{
 
 }
 
-.form-email{
-    margin-top: 50px;
-}
+
 
 .form-input-email{
     box-sizing: border-box;
@@ -128,24 +128,18 @@ form{
     border-radius: 4px;
 }
 
-.form-phone{
-    margin-top:50px;
-}
-
 .form-input-phone{
     box-sizing: border-box;
-    width: 162px;
+    width: 164px;
     height: 40px;
-    left: 591px;
-    top: 645px;
     background: #FFFFFF;
     border: 2px solid #AAAAAA;
     border-radius: 4px;
-    margin-left: 23px;
-}
-
-.form-password{
-    margin-top:50px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-left: 20px;
 }
 
 .form-input-password{
@@ -160,7 +154,7 @@ form{
 }
 
 .form-birthday{
-    margin-top:50px;
+    width: 40%;
 }
 
 .form-input-birthday{
@@ -182,7 +176,7 @@ form{
     justify-content: space-between;
     align-content: space-between;
     width: 100%;
-    margin-top: 85px;
+    margin-top: 100px;
 }
 
 
@@ -191,7 +185,9 @@ form{
     width: 20px;
     height: 20px;
     background: #0DBDBD;
+    accent-color: #0dbdbd;
     border: 2px solid #0DBDBD;
+    color: white;
     border-radius: 2px;
     flex: none;
     order: 0;
@@ -225,20 +221,242 @@ form{
     border:none;
     justify-content: space-between;
     align-content: space-between;
+    cursor: pointer;
+}
+
+.form-control small{
+    display: flex;
+    visibility: hidden;
+}
+
+.form-phone small {
+    margin-left: 23px;
+}
+
+.small-birthday {
+    margin-left: 23px;
+}
+
+.form-control.error small{
+    color: red;
+    visibility: visible;
+}
+
+.form-sucess{
+    display: flex;
+    margin-left: 46px;
+    margin-right: 59px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-sucess-intern{
+    width: 213px;
+    height: 124px;
+    left: 389px;
+    top: 321px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.form-sucess h1{
+    align-self: center;
+    justify-content: center;
+    font-size: 2.25em;
+    margin-left: 60px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.form-back{
+    padding: 0px 12px;
+    gap: 6px;
+    width: 269px;
+    height: 177px;
+    left: 378px;
+    top: 654px;
+    background: #0DBDBD;
+    border-radius: 10px;
+    color: white;
+    border:none;
+    justify-content: space-between;
+    align-content: space-between;
+    cursor: pointer;
+    margin-top: 200px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 18px;
+}
+
+.sucess{
+    display: none;
+}
+
+.form.back {
+    display: none;
+}
+
+.sucess.go {
+    display: flex;
+}
+
+.form-input{
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 600px) {
-    .img-intern, .title-intern, .form-title, .form-title-phone,  .form-title-birthday, .form-input-name, .form-email, .form-input-email, .form-phone, .form-input-phone, .form-password, .form-input-password, .form-birthday, .form-input-birthday, .form-check-button, .form-input-inputbutton, .form-input-checklabel, .form-input-button {
-        width: auto;
+    .img-intern, .title-intern, .form-title, .form-title-phone,  .form-title-birthday, .form-input-name, .form-email, .form-input-email, .form-phone, .form-input-phone, .form-password, .form-input-password, .form-birthday, .form-input-birthday, .form-check-button, .form-input-inputbutton, .form-input-checklabel, .form-input-button, .sucess, .form-sucess, .form-back, .img-sucess-intern, .form-sucess-title, .form-input {
         align-items: center;
-        margin-top: 5px;
+        margin-top: 1px;
+        flex-grow: 1;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        font-family: "Nunito", Arial, Helvetica, sans-serif;
+        color: #222222;
+        background: #E5E5E5;
+    }
+
+    .section{
+        max-width: 90%;
+    }
+
+    .form-control{
+        width: 100%;
+    }
+
+    .section{
+        width: 100%;
+    }
+
+    .form-input-name{
+        display: block;
+        width: 100%;
+    }
+
+    .form-input-email{
+        display: block;
+        width: 100%;
+    }
+
+    .form-input-password{
+        display: block;
+        width: 100%;
+    }
+
+    .form-input-checklabel{
+        margin-left: 40px;
+    }
+
+    .form-input-phone{
+        box-sizing: border-box;
+        width: 160px;
+        height: 40px;
+        left: 36px;
+        top: 555px;
+        background: #FFFFFF;
+        border: 2px solid #AAAAAA;
+        border-radius: 4px;
     }
 
     .form-title-phone, .form-phone, .form-input-phone {
+        display: block;
+        margin-left: 0px;
+        width: 140px;
+    }
+
+    .form-title-birthday, .form-birthday, .form-input-birthday, .small-birthday{
+        display: block;
+        margin-left: 100px; 
+        width: 140px;
+    }
+
+    .form-input-button{
+        display: flex;
+        width: 332;
+        height: 56;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    .form-check-button{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .form-input-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 6px;
+    width: 332px;
+    height: 56px;
+    left: 36px;
+    top: 690px;
+    background: #0DBDBD;
+    border-radius: 10px;
+    }
+
+    .form-phone small {
         margin-left: 0px;
     }
-    
-    .form-title-birthday, .form-birthday, .form-input-birthday{
-        margin-left: 0px; 
+
+    .order0{
+        order:0;
     }
+
+    .order1{
+        order:1;
+    }
+
+    .order2{
+        order:2;
+    }
+
+    .order3{
+        order:3;
+    }
+
+    .order4{
+        order: 4;;
+    }
+
+    .order5{
+        order:5;
+        margin-top: -74px;
+        position: static;
+    }
+
+    .order6{
+        order:6;
+    }
+
+    .form-back{
+        width: 327px;
+        height: 75px;
+        left: 580px;
+        top: 581px;
+    }
+
+    .img-sucess-intern{
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+
+    .form-sucess-title{
+        margin-left: 100px;  
+    }
+
+    .form-sucess h1{
+        margin-left: 100px;
+    }
+
 }
